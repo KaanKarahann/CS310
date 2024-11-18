@@ -1,4 +1,4 @@
-package edu.sabanciuniv.cs310project;
+package edu.sabanciuniv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,5 +11,3 @@ public class Cs310ProjectApplication {
     }
 
 }
-//TEST COMMM
-//laptop comm

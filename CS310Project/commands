@@ -1,0 +1,1 @@
+docker-compose up -d //starts docker from ide's terminal
