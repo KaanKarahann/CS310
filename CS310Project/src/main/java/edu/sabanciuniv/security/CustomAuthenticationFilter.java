@@ -1,7 +1,7 @@
 package edu.sabanciuniv.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.sabanciuniv.model.UserLoginRequest;
+import edu.sabanciuniv.model.User;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -27,7 +27,7 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
         try {
-            UserLoginRequest loginRequest = new ObjectMapper().readValue(request.getInputStream(), UserLoginRequest.class);
+            User loginRequest = new ObjectMapper().readValue(request.getInputStream(), User.class);
             var authToken = new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword());
             return authenticationManager.authenticate(authToken);
         } catch (IOException e) {

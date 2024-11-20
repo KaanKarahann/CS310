@@ -2,13 +2,8 @@ package edu.sabanciuniv.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import javax.persistence.Entity;
-
-
-import java.util.List;
 
 @Document(collection = "users")
-@Entity
 public class User {
 
     @Id
@@ -32,6 +27,7 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+
 
     public String getPassword() {
         return password;

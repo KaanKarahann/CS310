@@ -21,3 +21,8 @@ Run the Test:
 Save the test and run it.
 Check the responses to ensure that the registration and login endpoints are working correctly.
 By following these steps, you can test your API endpoints using Testfully or any other external API testing platform.
+
+{
+  "username": "newuser",
+  "password": "newpassword"
+}
