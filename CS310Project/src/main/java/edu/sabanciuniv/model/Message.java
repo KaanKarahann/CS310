@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Message {
 
     @Id
-    private String id; // MongoDB-generated ID
+    private String id;  // MongoDB auto-generated ID
 
     private String senderId; // ID of the user sending the message
     private String receiverId; // ID of the user receiving the message
