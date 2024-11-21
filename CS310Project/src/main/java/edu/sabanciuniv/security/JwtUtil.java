@@ -15,6 +15,8 @@ import java.util.function.Function;
 public class JwtUtil {
 
     private final String SECRET_KEY = "my_secret_key"; // Replace with a strong key
+    private static final String AUTH_HEADER = "Authorization";
+    private static final String BEARER_PREFIX = "Bearer ";
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
