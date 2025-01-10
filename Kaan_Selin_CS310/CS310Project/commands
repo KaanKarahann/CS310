@@ -1,0 +1,28 @@
+docker-compose up -d //starts docker from ide's terminal
+
+
+Steps to Test Using Testfully
+Create a New Test:
+Log in to your Testfully account.
+Create a new test and name it appropriately (e.g., "User Registration Test").
+Add Request for Registration:
+Add a new request to the test.
+Set the method to POST.
+Enter the URL for the registration endpoint.
+Set the headers to Content-Type: application/json.
+Add the JSON body for the registration request.
+Add Request for Login:
+Add another request to the same test.
+Set the method to POST.
+Enter the URL for the login endpoint.
+Set the headers to Content-Type: application/json.
+Add the JSON body for the login request.
+Run the Test:
+Save the test and run it.
+Check the responses to ensure that the registration and login endpoints are working correctly.
+By following these steps, you can test your API endpoints using Testfully or any other external API testing platform.
+
+{
+  "username": "newuser",
+  "password": "newpassword"
+}
